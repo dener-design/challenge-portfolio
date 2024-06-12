@@ -1,0 +1,151 @@
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 5rem;
+    background-color: #3F1A75;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.icones {
+    display: flex;
+    gap: 1rem;
+}
+
+.icones a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+#quem-sou {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+#quem-sou img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+
+.lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+}
+
+.lista-habilidades li {
+    width: 30%;
+}
+
+.projeto {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato label {
+    margin-top: 1rem;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.erro {
+    color: #931964;
+    font-size: 0.875rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #7E46AF;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #592C8D;
+}
+
+@media (max-width: 1200px) {
+    .lista-habilidades li {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.ativo {
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        background-color: #3F1A75;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .icones {
+        display: none;
+    }
+}

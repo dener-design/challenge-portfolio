@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dener Patrick - UX/UI Designer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/c479ba78f2.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">Dener</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#topo">Home</a></li>
+                <li><a href="#quem-sou">Quem sou</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="icones">
+            <a href="https://www.linkedin.com/in/dener-patrick/" class="fab fa-linkedin"></a>
+            <a href="https://www.behance.net/denerpatrick" class="fab fa-behance"></a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="quem-sou">
+        <div>
+            <h1>Oi, Sou o Dener Patrick UX/UI Designer</h1>
+            <p>No momento tenho dedicado aos estudos no mundo do desenvolvimento front-end, meu objetivo é ter um handoff melhorado com o time de desenvolvimento e até mesmo a construção de aplicações end-to-end.</p>
+        </div>
+        <img src="./img/fotoAvatar.png" alt="Dener Patrick">
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="lista-habilidades">
+            <li>Design de Interface</li>
+            <li>Prototipagem</li>
+            <li>Wireframing</li>
+            <li>Design Responsivo</li>
+            <li>Pesquisa de Usuário</li>
+            <li>Teste de Usabilidade</li>
+            <li>Design de Interação</li>
+            <li>Arquitetura de Informação</li>
+            <li>Design Visual</li>
+            <li>Design de Serviço</li>
+            <li>Motion Design</li>
+            <li>Design Thinking</li>
+        </ul>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <h3>Exaltasamba: uma história que transcende fronteiras</h3>
+            <p>Como o design de experiência do usuário foi fundamental para a banda conquistar milhares de fãs e lotar shows em todo o mundo</p>
+            <a href="https://dener.design/exaltasamba/" title="Conheça o projeto do Exaltasamba">Conheça o projeto</a>
+        </div>
+        <div class="projeto">
+            <h3>Como o Thiaguinho engajou seus fãs</h3>
+            <p>Como a criação de Landing Pages e site para a carreira solo do Thiaguinho impulsionou o pré-lançamento do seu DVD e engajou seus fãs</p>
+            <a href="https://dener.design/thiaguinho/" title="Conheça o projeto do Thiaguinho">Conheça o projeto</a>
+        </div>
+        <div class="projeto">
+            <h3>Criação de Design System para a Yandeh</h3>
+            <p>Como um Design System bem pensado e executado pode transformar a forma como uma empresa trabalha</p>
+            <a href="https://dener.design/yandeh/" title="Conheça o projeto Yandeh">Conheça o projeto</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+            <span class="erro" id="erro-nome"></span>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <span class="erro" id="erro-email"></span>
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <span class="erro" id="erro-telefone"></span>
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <span class="erro" id="erro-mensagem"></span>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
